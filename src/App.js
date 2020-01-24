@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import Navbar from './containers/Navbar';
+import Footer from './containers/Footer';
 
 function App() {
   return (
     <div className="App">
-      {/* <nav className="Navbar">hfgfhfh</nav> */}
       <Navbar />
       <header className="App-header">
         <p>
@@ -15,6 +15,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Footer />
     </div>
   );
 }
