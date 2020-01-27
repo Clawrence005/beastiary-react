@@ -27,6 +27,10 @@
   background-color: #282c34;
   background-color: purple;
 }
+.navbar-main{
+  border: 3px solid grey;
+  height: 55px;
+}
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;

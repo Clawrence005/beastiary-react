@@ -1,10 +1,9 @@
 import React from 'react';
 
-function NavName() {
+function NavName(props) {
   return (
-    <div>
-      NAME
-</div>
+    <div className="nav-name">{props.navName}
+    </div>
   )
 }
 
