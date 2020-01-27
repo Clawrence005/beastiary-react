@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./styles.css";
+import "./style.css";
 
 function BeastGrid(props) {
   return <div className="beast-grid">
