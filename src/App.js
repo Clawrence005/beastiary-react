@@ -4,6 +4,7 @@ import Navbar from './containers/Navbar';
 import Footer from './containers/Footer';
 import beasts from './dataobject.json';
 import Beast from './components/Beast';
+import BeastGrid from './containers/BeastGrid';
 
 class App extends Component {
   state = {
@@ -15,16 +16,16 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-
-        {this.state.beasts.map(beast => (
-          <Beast
-            id={beast.id}
-            key={beast.key}
-            name={beast.name}
-            image={beast.image}
-          />
-        ))}
-        <Beast />
+        <BeastGrid >
+          {this.state.beasts.map(beast => (
+            <Beast
+              id={beast.id}
+              key={beast.key}
+              name={beast.name}
+              image={beast.image}
+            />
+          ))}
+        </BeastGrid>
         <Footer />
       </div>
     );
