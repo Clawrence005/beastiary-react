@@ -1,10 +1,19 @@
 [
   {
     "navName": "Website Stuff",
-    "links": [
-      "home",
-      "portfolio",
-      "contact"
+    "navLinks": [
+      {
+        "id": 1,
+        "linkName": "home"
+      },
+      {
+        "id": 2,
+        "linkName": "portfolio"
+      },
+      {
+        "id": 3,
+        "linkName": "contact"
+      }
     ]
   }
 ]
