@@ -1,23 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Navbar from './containers/Navbar';
 import Footer from './containers/Footer';
+import beasts from './dataobject.json';
+import Beast from './components/Beast';
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-      <Footer />
-    </div>
-  );
+class App extends Component {
+  state = {
+    beasts
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+        <Navbar />
+
+        {this.state.beasts.map(beast => (
+          <Beast
+            id={beast.id}
+            key={beast.key}
+            name={beast.name}
+            image={beast.image}
+          />
+        ))}
+        <Beast />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
