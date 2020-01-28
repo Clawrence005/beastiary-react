@@ -3,7 +3,7 @@ import './style.css';
 
 function Footer(props) {
   return (
-    <footer className="footer-div">
+    <footer className="footer-main">
       {props.children}
     </footer>
   )

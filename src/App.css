@@ -23,14 +23,23 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
-.Navbar {
-  background-color: #282c34;
-  background-color: purple;
-}
+
 .navbar-main{
   border: 3px solid grey;
   /* height: 55px; */
 }
+.navbar-main  > * {
+  border: 3px solid pink;
+  display: inline-block;
+}
+.footer-main{
+  border: 3px solid grey;
+}
+.footer-main > * {
+  display: inline-block;
+}
+
+
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -43,10 +52,6 @@
 } */
 
 
-  .Footer {
-  background-color: #282c34;
-  background-color: purple;
-} 
 /*
 @keyframes App-logo-spin {
   from {
