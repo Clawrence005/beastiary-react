@@ -1,14 +1,18 @@
 import React from 'react';
+import './style.css';
 
 function SocialMediaLink(props) {
   return (
-    <div className="social-media">
-      <img src={props.imgSrc} alt={props.name} />
-      <a href={props.linkSrc}>
-        <h3>
-          {props.linkName}
-        </h3>
-      </a>
-    </div>
+    // <div className="social-media">
+
+    <a href={props.linkSrc} className="social-media-link">
+      <img src={props.image} alt={props.name} className="social-media-image" />
+      <h3>
+        {props.name}
+      </h3>
+    </a>
+    // </div>
   )
 }
+
+export default SocialMediaLink;

@@ -1,0 +1,11 @@
+.social-media-image{
+  width: 133px;
+  height: auto;
+
+}
+
+.social-media-link{  
+  display: inline-block;
+  /* cursor: pointer; */
+  border: 3px green solid;
+}

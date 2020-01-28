@@ -1,10 +1,10 @@
 import React from 'react'
-import FooterLink from '../../components/FooterComponents/FooterLink'
-function Footer() {
+import './style.css';
+
+function Footer(props) {
   return (
-    <footer className="Footer">
-      Footer
-      <FooterLink />      <FooterLink />      <FooterLink />
+    <footer className="footer-div">
+      {props.children}
     </footer>
   )
 }

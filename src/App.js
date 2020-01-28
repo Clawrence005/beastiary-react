@@ -4,6 +4,7 @@ import Navbar from './containers/Navbar';
 import NavName from './components/NavComponents/NavName';
 import NavLink from './components/NavComponents/NavLink';
 import Footer from './containers/Footer';
+import SocialMediaLinks from './components/SocialMediaLink';
 import beasts from './beastobject.json';
 import siteInfo from './siteobject.json';
 import Beast from './components/Beast';
@@ -30,17 +31,17 @@ class App extends Component {
     socialMediaLinks: [{
       name: "webpage",
       id: 1,
-      imgSrc: "#",
+      image: "https://images.pexels.com/photos/1224158/pexels-photo-1224158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       linkSrc: "https://www.colinlawrence.dev"
     }, {
       name: "Portfolio",
       id: 2,
-      imgSrc: "#",
+      image: "https://images.pexels.com/photos/1224158/pexels-photo-1224158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       linkSrc: "https://www.google.com"
     }, {
       name: "Contact",
       id: 3,
-      imgSrc: "#",
+      image: "https://images.pexels.com/photos/1224158/pexels-photo-1224158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       linkSrc: "https://www.yahoo.com"
     }]
   }
@@ -83,7 +84,17 @@ class App extends Component {
             />
           ))}
         </BeastGrid>
-        <Footer />
+        <Footer>
+          {this.state.socialMediaLinks.map(socialMediaLink => (
+            <SocialMediaLinks
+              key={socialMediaLink.id}
+              linkSrc={socialMediaLink.linkSrc}
+              alt={socialMediaLink.name}
+              image={socialMediaLink.image}
+              name={socialMediaLink.name}
+            />
+          ))}
+        </Footer>
       </div>
     );
   }
