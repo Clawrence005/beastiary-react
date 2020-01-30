@@ -1,0 +1,43 @@
+.burger{
+  display: block;
+
+  /* position: relative; */
+
+  /* height: 3px;   */
+
+  background-color: black;
+}
+
+.burger-main{
+  display: block;
+  position: relative;
+  /* border-radius: 50%; */
+  border: 2px solid rgb(0, 0, 0,0);
+  width: 24px;
+  height: 24px;
+}
+.burger-outer{
+border: 3px solid rgb(0, 0, 0,0);
+padding: 6px;
+border-radius: 50%;
+}
+.burger-outer:hover{
+  border: 3px solid black;
+}
+
+.burger-top{
+   margin-bottom: calc(33.33% - 1.33px); 
+   border-bottom: 3px solid black;
+}
+
+.burger-middle{
+  /* margin-bottom: 33.33%;  */
+  margin-bottom: calc(33.33% - 1.33px);
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.burger-bottom{
+  margin-bottom: calc(33.33% - 1.33px);
+  border-top: 3px solid black;
+}

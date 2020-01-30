@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './containers/Navbar';
 import NavName from './components/NavComponents/NavName';
 import NavLink from './components/NavComponents/NavLink';
+import NavBurger from './components/NavComponents/NavBurger';
 import Footer from './containers/Footer';
 import SocialMediaLinks from './components/SocialMediaLink';
 import beasts from './beastobject.json';
@@ -71,7 +72,7 @@ class App extends Component {
               id={link.id}
               linkSrc={link.linkSrc}
             />))}
-
+          <NavBurger />
         </Navbar>
 
         <BeastGrid >
