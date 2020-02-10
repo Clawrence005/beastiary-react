@@ -82,6 +82,8 @@ class App extends Component {
               key={beast.id}
               name={beast.name}
               image={beast.image}
+              malicious={beast.malicious}
+              summary={beast.summary}
             />
           ))}
         </BeastGrid>

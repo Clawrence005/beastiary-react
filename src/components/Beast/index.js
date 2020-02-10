@@ -13,6 +13,9 @@ function Beast(props) {
         width="55px"
         height="55px"
       />
+      <p>{props.summary}</p>
+      <h4> {props.malicious}</h4>
+
     </div>
   )
 }
