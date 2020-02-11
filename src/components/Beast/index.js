@@ -1,9 +1,10 @@
 import React from 'react'
 import "./style.css"
 function Beast(props) {
+  const malicious = props.malicious;
+
   return (
     <div className="beast-div">
-      <h2>{props.name}</h2>
 
       <img
         className="beast-image"
@@ -15,6 +16,11 @@ function Beast(props) {
       />
       <p>{props.summary}</p>
       <h4> {props.malicious}</h4>
+      {malicious ? (
+        <p>I'm malicious component</p>
+      ) : (
+          <p>I'm friendly component</p>
+        )}
 
     </div>
   )

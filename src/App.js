@@ -10,6 +10,7 @@ import beasts from './beastobject.json';
 import siteInfo from './siteobject.json';
 import Beast from './components/Beast';
 import BeastGrid from './containers/BeastGrid';
+import BeastHeader from './components/BeastHeader';
 
 class App extends Component {
   state = {
@@ -76,16 +77,23 @@ class App extends Component {
         </Navbar>
 
         <BeastGrid >
+
           {this.state.beasts.map(beast => (
-            <Beast
-              id={beast.id}
-              key={beast.id}
-              name={beast.name}
-              image={beast.image}
-              malicious={beast.malicious}
-              summary={beast.summary}
-            />
+            <div className="beast-main-div">
+              <BeastHeader
+                key={beast.id}
+                name={beast.name} />
+              <Beast
+                id={beast.id}
+                key={beast.id}
+                name={beast.name}
+                image={beast.image}
+                malicious={beast.malicious}
+                summary={beast.summary}
+              />
+            </div>
           ))}
+
         </BeastGrid>
         <Footer>
           {this.state.socialMediaLinks.map(socialMediaLink => (

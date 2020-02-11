@@ -9,6 +9,11 @@
   border: 3px solid green;
 }
 
+.beast-main-div{
+border: 3px solid purple;
+width:100%;
+height: auto;
+}
 /* .App {
   text-align: center;
 } */
