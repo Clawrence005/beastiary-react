@@ -1,3 +1,13 @@
+
+
+
+:root{
+  --navbar-bg-color: pink;
+  --footer-bg-color: pink;
+
+  /* Beast Content */
+  --beast-content-margin: 3em 6em 7em;
+}
 * {
   box-sizing: border-box;
 }
@@ -7,6 +17,7 @@
 }
 .beast-grid{
   border: 3px solid green;
+  margin: var(--beast-content-margin);
 }
 
 .beast-main-div{
@@ -31,7 +42,7 @@ height: auto;
 
 .navbar-main{
   border: 3px solid grey;
-  background-color: grey;
+  /* background-color: var(--navbar-bg-color); */
   /* height: 55px; */
 }
 .navbar-main  > * {
@@ -40,7 +51,7 @@ height: auto;
 }
 .footer-main{
   border: 3px solid grey;
-  background-color: grey;
+  background-color: var(--footer-bg-color);
 }
 .footer-main > * {
   display: inline-block;
