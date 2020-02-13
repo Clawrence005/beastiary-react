@@ -7,9 +7,12 @@
 
   /* Beast Content */
   --beast-content-margin: 3em 6em 7em;
+  --beast-header-bg-color: #e6dcdc;
 }
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .beast-div{
