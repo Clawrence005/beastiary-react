@@ -4,7 +4,7 @@ function Beast(props) {
   const malicious = props.malicious;
 
   return (
-    <div className="beast-div">
+    <div className="beast-content-div">
 
       <img
         className="beast-image"

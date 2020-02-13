@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.beast-div{
+.beast-content-div{
   border: 3px solid red;
 }
 .beast-grid{
@@ -52,6 +52,8 @@ height: auto;
   border: 3px solid pink;
   display: inline-block;
 }
+
+
 .footer-main{
   border: 3px solid grey;
   background-color: var(--footer-bg-color);
