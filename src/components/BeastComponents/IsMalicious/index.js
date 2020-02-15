@@ -2,11 +2,11 @@ import React from 'react';
 
 function IsMalicious(props) {
   return (
-    <div>
+    <div beast-malicious>
       {props.malicious === true ? (
-        <p>I'm malicious componentwwewww</p>
+        <p>This beast is known to be malicious to humans;</p>
       ) : (
-          <p>I'm dewdwedwerwe component</p>
+          <p>This beast is known to be friendly to humans;</p>
         )}
     </div>
   )
