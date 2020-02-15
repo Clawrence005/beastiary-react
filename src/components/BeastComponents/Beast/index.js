@@ -1,6 +1,7 @@
 import React from 'react'
 import BeastSummary from '../BeastSummary';
 import BeastHeader from '../BeastHeader';
+import IsMalicious from '../Malicious/IsMalicious';
 import "./style.css"
 
 function Beast(props) {
@@ -23,13 +24,13 @@ function Beast(props) {
       {/* <p>{props.summary}</p> */}
       <BeastSummary key={props.id}
         summary={props.summary} />
-      <h4> {props.malicious}</h4>
       {malicious ? (
         <p>I'm malicious component</p>
       ) : (
           <p>I'm friendly component</p>
         )}
-
+      <IsMalicious key={props.id}
+        malicious={props.malicious} />
     </div>
   )
 }

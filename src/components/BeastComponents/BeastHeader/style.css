@@ -1,6 +1,8 @@
 .beast-header{
 display:block;
+margin: var(--beast-header-margin);
 text-align: center;
 background-color: var(--beast-header-bg-color);
 text-transform: uppercase;
+
 }

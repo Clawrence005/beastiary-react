@@ -8,9 +8,9 @@ import Footer from './containers/Footer';
 import SocialMediaLinks from './components/SocialMediaLink';
 import beasts from './beastobject.json';
 import siteInfo from './siteobject.json';
-import Beast from './components/Beast';
+import Beast from './components/BeastComponents/Beast';
 import BeastGrid from './containers/BeastGrid';
-import BeastHeader from './components/BeastHeader';
+import BeastHeader from './components/BeastComponents/BeastHeader';
 
 class App extends Component {
   state = {
