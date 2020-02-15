@@ -1,11 +1,15 @@
 import React from 'react'
 import BeastSummary from '../BeastSummary';
+import BeastHeader from '../BeastHeader';
 import "./style.css"
+
 function Beast(props) {
   const malicious = props.malicious;
 
   return (
     <div className="beast-content-div">
+      <BeastHeader key={props.id}
+        name={props.name} />
 
       <img
         className="beast-image"

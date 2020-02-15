@@ -80,9 +80,9 @@ class App extends Component {
 
           {this.state.beasts.map(beast => (
             <div className="beast-main-div">
-              <BeastHeader
+              {/* <BeastHeader
                 key={beast.id}
-                name={beast.name} />
+                name={beast.name} /> */}
               <Beast
                 id={beast.id}
                 key={beast.id}
