@@ -1,4 +1,5 @@
 import React from 'react'
+import BeastSummary from '../BeastSummary';
 import "./style.css"
 function Beast(props) {
   const malicious = props.malicious;
@@ -14,7 +15,10 @@ function Beast(props) {
         width="55px"
         height="55px"
       />
-      <p>{props.summary}</p>
+
+      {/* <p>{props.summary}</p> */}
+      <BeastSummary key={props.id}
+        summary={props.summary} />
       <h4> {props.malicious}</h4>
       {malicious ? (
         <p>I'm malicious component</p>
