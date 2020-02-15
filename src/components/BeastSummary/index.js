@@ -1,8 +1,10 @@
 import React from 'react';
+import './style.css';
 
 function BeastSummary(props) {
   return (
-    <p>{props.summary}</p>
+    <div className="beast-summary"> <p>{props.summary}</p></div>
+
   )
 };
 

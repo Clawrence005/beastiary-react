@@ -8,6 +8,7 @@
   /* Beast Content */
   --beast-content-margin: 3em 6em 7em;
   --beast-header-bg-color: #e6dcdc;
+  --beast-grid-gap: 1em;
 }
 * {
   box-sizing: border-box;
@@ -21,7 +22,7 @@
 .beast-grid{
   border: 3px solid green;
   margin: var(--beast-content-margin);
-  gap: 1em;
+  gap: var(--beast-grid-gap);
 }
 
 .beast-main-div{
