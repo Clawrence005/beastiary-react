@@ -30,7 +30,8 @@ function Beast(props) {
           <p>I'm friendly component</p>
         )} */}
       <IsMalicious key={props.id}
-        malicious={props.malicious} />
+        malicious={malicious}
+      />
     </div>
   )
 }

@@ -10,7 +10,7 @@ import beasts from './beastobject.json';
 import siteInfo from './siteobject.json';
 import Beast from './components/BeastComponents/Beast';
 import BeastGrid from './containers/BeastGrid';
-import BeastHeader from './components/BeastComponents/BeastHeader';
+// import BeastHeader from './components/BeastComponents/BeastHeader';
 
 class App extends Component {
   state = {
@@ -103,6 +103,7 @@ class App extends Component {
               alt={socialMediaLink.name}
               image={socialMediaLink.image}
               name={socialMediaLink.name}
+
             />
           ))}
         </Footer>

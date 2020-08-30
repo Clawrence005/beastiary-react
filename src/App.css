@@ -11,7 +11,7 @@
   --beast-header-bg-color: #e6dcdc; 
   --beast-header-margin: 0 0 1rem;
   --beast-summary-margin-top: 1rem;
- 
+  --beast-malicious-margin-top: 1rem;
 }
 * {
   box-sizing: border-box;
